@@ -1,0 +1,125 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  padding-left: 90px;
+  font-size: 243%;
+}
+
+.container{
+  padding: 53px 50px;
+  display: flex;
+  .listCustomer {
+    flex: 70%;
+    padding: 0 50px;
+
+    .customer {
+      margin-top: 20px;
+      display: flex;
+      position: relative;
+      box-shadow: #707070 1px 3px 7px 0px;
+      border-radius: 20px;
+      .active {
+        position: absolute;
+        bottom: 20px;
+        right: 150px;
+        display: flex;
+
+        .btn {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+        button {
+          background-color: white;
+          border: #787586 1px solid;
+          color: #787586;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          outline: none;
+        }
+      }
+      .avatar {
+        flex: 20%;
+        width: 100%;
+        height: 100%;
+         img{
+           width: 100%;
+           height: 100%;
+           border-radius: 20px 0 0 20px;
+         }
+      }
+      .content{
+        flex: 80%;
+        color: #707070;
+        padding-left: 20px;
+        h2 {
+          font-size: 120%;
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+  .newCustomer {
+    flex: 30%;
+    background-color: #F9F9F9;
+    padding: 0px 50px;
+    color: #535353;
+    input {
+      width: 100%;
+      padding: 10px 10px;
+      border-radius: 3px;
+      border: #F1F1F1 1px solid;
+      margin:20px 0;
+    }
+    input::placeholder {
+      color: #CBCBCB;
+    }
+    .file {
+      display: inline;
+      width: 20%;
+      border: none;
+      background-color: white;
+    }
+    span {
+      border: #787568 1px solid;
+      border-radius: 3px;
+      padding: 0px 5px;
+
+    }
+    .img {
+      width: 40%;
+      padding-top: 5px;
+      margin: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    button {
+      width: 100%;
+      background-color: #124BE6;
+      padding: 10px 30px;
+      border: none;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 100%;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.bl {
+  display: block;
+}
